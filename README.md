@@ -35,7 +35,7 @@ Two parts:
 ### 1. Live web app (no install)
 Open `index.html` in any modern browser, or visit the hosted version:
 
-    https://<your-site>.netlify.app
+    https://glp-sim.netlify.app/
 
 ### 2. Interactive Gradio app (local)
     pip install -r requirements.txt
@@ -43,7 +43,7 @@ Open `index.html` in any modern browser, or visit the hosted version:
 
 Then open the local URL it prints (usually http://127.0.0.1:7860). Hosted version:
 
-    https://huggingface.co/spaces/<your-space>
+    https://huggingface.co/spaces/naturally-intuitive/glimpse
 
 ### 3. Reproduce the FAERS analysis
 The script reads an optional openFDA API key from an environment variable (a key raises the rate limit; the script also runs without one). **Never commit your key** — it is read from the environment, not the code.
@@ -91,8 +91,8 @@ All magnitudes are illustrative trial-derived anchors. The real-world toggle att
 
 ## How to cite
 
-- **Manuscript:** Agha A. A pharmacovigilance-aware educational simulator for GLP-1 receptor agonist prescribing: development and consistency with FDA safety signals. *Submitted.* [DOI to be added]
-- **Code/data archive:** [Zenodo DOI to be added — e.g. 10.5281/zenodo.XXXXXXX]
+- **Manuscript:** Agha A. A pharmacovigilance-aware educational simulator for GLP-1 receptor agonist prescribing: development and consistency with FDA safety signals. *Submitted.* 
+- **Code/data archive:** []
 
 ---
 
@@ -102,4 +102,4 @@ MIT — see `LICENSE`.
 
 ## Author
 
-Dr Adnan Agha, Consultant Endocrinologist; College of Medicine and Health Sciences, United Arab Emirates University. Contact via LinkedIn: https://www.linkedin.com/in/<your-handle>
+Dr Adnan Agha, Consultant Endocrinologist; College of Medicine and Health Sciences, United Arab Emirates University. Contact via LinkedIn: https://www.linkedin.com/in/adnan-agha-1354b6187/
