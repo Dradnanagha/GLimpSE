@@ -92,7 +92,7 @@ All magnitudes are illustrative trial-derived anchors. The real-world toggle att
 ## How to cite
 
 - **Manuscript:** Agha A. A pharmacovigilance-aware educational simulator for GLP-1 receptor agonist prescribing: development and consistency with FDA safety signals. *Submitted.* 
-- **Code/data archive:** []
+- **Code/data archive:** [10.5281/zenodo.20772220]
 
 ---
 
@@ -102,4 +102,4 @@ MIT — see `LICENSE`.
 
 ## Author
 
-Dr Adnan Agha, Consultant Endocrinologist; College of Medicine and Health Sciences, United Arab Emirates University. Contact via LinkedIn: https://www.linkedin.com/in/adnan-agha-1354b6187/
+Dr Adnan Agha, Consultant Endocrinologist; College of Medicine and Health Sciences, United Arab Emirates University. Director Clinical Trials Unit CMHS. Chair CardioMetabolic Research Priority Group. Contact via LinkedIn: https://www.linkedin.com/in/adnan-agha-1354b6187/
