@@ -1,4 +1,4 @@
-# GLP-1 Reality Check
+# GLimpSE: A GLP-1RA Reality Check
 **A pharmacovigilance-aware educational simulator for GLP-1 receptor agonist prescribing**
 *Short name: GLiMPSE. Author: Dr Adnan Agha, Consultant Endocrinologist (FRCP London & Glasgow).*
 
