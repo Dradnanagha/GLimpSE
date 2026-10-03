@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "GLiMPSE: a pharmacovigilance-aware educational simulator for GLP-1 receptor agonist prescribing"
+authors:
+  - family-names: Agha
+    given-names: Adnan
+    orcid: "https://orcid.org/0000-0002-2704-8931"
+    affiliation: "College of Medicine and Health Sciences, United Arab Emirates University"
+  - family-names: Anwar
+    given-names: Eram
+    orcid: "https://orcid.org/0009-0006-9335-9208"
+    affiliation: "College of Medicine and Health Sciences, United Arab Emirates University"
+version: "1.1.0"
+doi: "10.5281/zenodo.20772219"
+license: MIT
+repository-code: "https://github.com/Dradnanagha/GLimpSE"
+date-released: "2026-10-03"
