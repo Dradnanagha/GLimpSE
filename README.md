@@ -24,11 +24,12 @@ Two parts:
 |---|---|
 | `index.html` | The public web simulator (single file, no build step). Open locally or via the live link below. |
 | `app.py` | Interactive Gradio version of the simulator (for Hugging Face Spaces or local use). |
-| `requirements.txt` | Python dependencies, with the exact versions used. |
+| `requirements.txt` | Python dependencies, pinned to the versions with which the analyses were re-run and checked against the deposited outputs (Python 3.12). |
 | `faers_glp1_disproportionality.py` | Reproducible FAERS disproportionality engine (ROR, PRR, IC, EBGM) per agent and pooled. |
 | `RUN_FAERS_WINDOWS.md` | Detailed step-by-step guide for running the FAERS script on Windows (PowerShell). |
 | `active_comparator_ror.py` | Recomputes the active-comparator reporting odds ratios and 95% CIs from the deposited counts. |
 | `sensitivity_attenuation.py` | One-way sensitivity analysis of the simulator's real-world attenuation factors (imports `app.py`). |
+| `evaluate_models.py` | Reproduces the internal performance of the simulator's four models (held-out 25% partition, random seed 42). |
 | `data/` | Deposited outputs: two-by-two counts and metrics for all 756 drug-event pairs (`Supplementary_S1_contingency_counts.csv`), active-comparator counts (`sensitivity_active_comparator.csv`), and the attenuation sensitivity grids. Running the FAERS script regenerates the per-agent, class-level, signal-summary, and geographic CSVs. |
 | `CITATION.cff` | Citation metadata (authors, ORCIDs, archive DOI). |
 | `LICENSE` | MIT licence. |
@@ -78,7 +79,7 @@ pip install -r requirements.txt
 python faers_glp1_disproportionality.py
 ```
 
-The script writes the per-agent, class-level, signal-summary, and geographic CSVs. Full Windows walkthrough is in `RUN_FAERS_WINDOWS.md`. The active-comparator estimates are recomputed with `python active_comparator_ror.py`, and the attenuation sensitivity analysis with `python sensitivity_attenuation.py`.
+The script writes the per-agent, class-level, signal-summary, and geographic CSVs. Full Windows walkthrough is in `RUN_FAERS_WINDOWS.md`. The active-comparator estimates are recomputed with `python active_comparator_ror.py`, the attenuation sensitivity analysis with `python sensitivity_attenuation.py`, and model performance with `python evaluate_models.py`.
 
 ---
 
@@ -104,6 +105,7 @@ All magnitudes are illustrative trial-derived anchors. The real-world toggle att
 - **Reporting standard:** disproportionality results follow the READUS-PV statement.
 - **Efficacy anchors:** SURMOUNT-5, SURPASS-2, and PIONEER 1.
 - The FAERS analysis is documented for transparency and reproducibility. It was not pre-registered; it serves as a consistency check against established safety signals.
+- **Reproducibility check:** re-running `faers_glp1_disproportionality.py` offline from the key-stripped query cache reproduces 706 of the 756 drug-event pairs in `data/Supplementary_S1_contingency_counts.csv` exactly. The remaining pairs (venous thromboembolism, thyroid cancer, and some optic-neuropathy and ileus pairs) came from queries not included in the cache; their counts are given in that file.
 
 ---
 

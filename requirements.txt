@@ -1,5 +1,8 @@
-gradio>=4.44
-scikit-learn>=1.3
-pandas>=2.0
-numpy>=1.24
-matplotlib>=3.7
+# Python 3.12. Package versions with which the analyses were re-run and checked against the deposited outputs.
+requests==2.33.1
+scipy==1.17.1
+pandas==3.0.2
+numpy==2.4.4
+scikit-learn==1.8.0
+matplotlib==3.10.8
+gradio==6.29.1
